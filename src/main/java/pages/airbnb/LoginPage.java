@@ -67,7 +67,7 @@ public class LoginPage extends BasePage {
      */
     public void sendPassword(String password){
         System.out.println("Trying to enter password...");
-        passwordTbx.sendKeys("Appium123");
+        passwordTbx.sendKeys("Siete777Siete888");
         System.out.println("Password value entered!");
     }
 }
