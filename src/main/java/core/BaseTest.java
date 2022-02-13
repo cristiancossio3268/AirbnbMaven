@@ -5,8 +5,10 @@ import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -23,7 +25,9 @@ public class BaseTest {
         //capabilities.setCapability("app", "/Users/ivanrivas/AirbnbMaven/src/main/resources/Selendroid/selendroid-test-app.apk");
 
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
-        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+        //Implicit wait
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @AfterTest
