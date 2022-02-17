@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class BasePage {
 
@@ -166,8 +167,10 @@ public class BasePage {
     public void takeScreenShot(String path, String name) throws IOException {
         //Screenshots variables
         LocalDateTime date = LocalDateTime.now();
-        name =name+"_"+date+".jpg";
-        name = name.replaceAll(":","-");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy-HH:mm:ss");
+        String formattedLocalDateTime = date.format(formatter);
+        name =name+"_"+formattedLocalDateTime+".jpg";
+        name = name.replaceAll(":",".");
         System.out.println("Capturing the snapshot of the page...");
         File srcFiler=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFiler, new File(path+name));

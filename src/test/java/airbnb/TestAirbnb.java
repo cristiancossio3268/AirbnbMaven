@@ -8,9 +8,9 @@ import pages.airbnb.BarraPage;
 import pages.airbnb.ExplorePage;
 import pages.airbnb.LoginPage;
 import pages.airbnb.ProfilePage;
-
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class TestAirbnb extends BaseTest {
 
@@ -18,6 +18,10 @@ public class TestAirbnb extends BaseTest {
     public void testAirbnbApp() throws InterruptedException, IOException {
 
         LocalDateTime date = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy-HH:mm:ss");
+        String formattedLocalDateTime = date.format(formatter);
+        String pathSS = "src/main/resources/airbnb/evidences/" + formattedLocalDateTime + "/";
+        pathSS = pathSS.replaceAll(":",".");
 
         //Class objects
 
@@ -25,9 +29,6 @@ public class TestAirbnb extends BaseTest {
         ExplorePage exploreObj = new ExplorePage(getDriver());
         BarraPage barraObj = new BarraPage(getDriver());
         ProfilePage profileObj = new ProfilePage(getDriver());
-        String pathSS = "src/main/resources/airbnb/evidences/" + date + "/";
-        pathSS = pathSS.replaceAll(":","-");
-
 
         //Code
 
