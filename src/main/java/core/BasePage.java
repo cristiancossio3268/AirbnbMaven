@@ -15,6 +15,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -55,12 +56,30 @@ public class BasePage {
     }
 
     /**
+     * Wait for element to be Clickable
+     * @param locator
+     */
+    public void waitForElementToBeClickable(By locator){
+        WebDriverWait wait = new WebDriverWait(driver,20);
+        wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+
+    /**
      * Tap back method - teclear botón de volver atras
      */
     public void tapBack() {
         System.out.println("Trying to tap back on device...");
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
         System.out.println("Back button tapped.");
+    }
+
+    /**
+     * Remove Keyboard method - Método para remover el teclado
+     */
+    public void removeKeyboard(){
+        System.out.println("Trying remove keyboard...");
+        driver.hideKeyboard();
+        System.out.println("Keyboard removed");
     }
 
     /**
@@ -148,6 +167,7 @@ public class BasePage {
         //Screenshots variables
         LocalDateTime date = LocalDateTime.now();
         name =name+"_"+date+".jpg";
+        name = name.replaceAll(":","-");
         System.out.println("Capturing the snapshot of the page...");
         File srcFiler=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFiler, new File(path+name));
@@ -230,5 +250,4 @@ public class BasePage {
             swipeScreen(dir);
         }
     }
-
 }

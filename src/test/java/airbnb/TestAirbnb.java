@@ -10,11 +10,14 @@ import pages.airbnb.LoginPage;
 import pages.airbnb.ProfilePage;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 public class TestAirbnb extends BaseTest {
 
     @Test
     public void testAirbnbApp() throws InterruptedException, IOException {
+
+        LocalDateTime date = LocalDateTime.now();
 
         //Class objects
 
@@ -22,7 +25,9 @@ public class TestAirbnb extends BaseTest {
         ExplorePage exploreObj = new ExplorePage(getDriver());
         BarraPage barraObj = new BarraPage(getDriver());
         ProfilePage profileObj = new ProfilePage(getDriver());
-        String pathSS = "src/main/resources/airbnb/ss/";
+        String pathSS = "src/main/resources/airbnb/evidences/" + date + "/";
+        pathSS = pathSS.replaceAll(":","-");
+
 
         //Code
 
@@ -47,43 +52,62 @@ public class TestAirbnb extends BaseTest {
          */
 
         //4-Verify explore page
-        Assert.assertTrue(exploreObj.isExplorePagePresent(),"Explore page is NOT displayed");
-        //exploreObj.takeScreenShot(pathSS,"4-Verify explore page OK");
+        Assert.assertTrue(exploreObj.isExplorePagePresent(), "Explore page is NOT displayed");
+        exploreObj.takeScreenShot(pathSS,"4-Verify explore page OK");
 
         //5-Look for destination whit JSON
         exploreObj.whereAreYouGoingClick();
-        exploreObj.enterDestination(exploreObj.getValueJSON("src/main/resources/airbnb/destination.json","Playa"));
-        //exploreObj.takeScreenShot(pathSS,"5-Look for destination whit JSON OK");
+        exploreObj.enterDestination(exploreObj.getValueJSON("src/main/resources/airbnb/destination.json", "Playa"));
+        exploreObj.takeScreenShot(pathSS,"5-Look for destination whit JSON OK");
         exploreObj.tapBack();
         exploreObj.tapBack();
 
         //6-Look for destination whit Excel
         exploreObj.whereAreYouGoingClick();
-        exploreObj.enterDestination(exploreObj.getValueFromExcel("src/main/resources/airbnb/destinations.xlsx","Cataratas"));
-        //exploreObj.takeScreenShot(pathSS,"6-Look for destination whit Excel OK");
+        exploreObj.enterDestination(exploreObj.getValueFromExcel("src/main/resources/airbnb/destinations.xlsx", "Cataratas"));
+        exploreObj.takeScreenShot(pathSS,"6-Look for destination whit Excel OK");
         exploreObj.tapBack();
         exploreObj.tapBack();
 
         //7-Click on Profile
         barraObj.profileButtonClick();
-        //barraObj.takeScreenShot(pathSS,"7-Click on Profile OK");
+        barraObj.takeScreenShot(pathSS,"7-Click on Profile OK");
 
         //8-Verify Profile page
-        Assert.assertTrue(profileObj.verifyProfileText());
-        //barraObj.takeScreenShot(pathSS,"8-Verify Profile page OK");
+        Assert.assertTrue(profileObj.verifyProfileText(),"Profile page is NOT displayed");
+        barraObj.takeScreenShot(pathSS,"8-Verify Profile page OK");
 
-        //Swipes
-        profileObj.swipeToElement(5, BasePage.Direction.UP);
+        //9-Swipes
+        profileObj.swipeToElement(3, BasePage.Direction.UP);
+        profileObj.takeScreenShot(pathSS,"9-Swipes OK");
 
-        //profileObj.takeScreenShot(pathSS,"profile");
+        //10-Find a Restaurant whit JSON
+        barraObj.exploreButtonClickTwo();
+        exploreObj.whereAreYouGoingClick();
+        exploreObj.enterDestination(exploreObj.getValueJSON("src/main/resources/airbnb/destination.json", "Restaurante"));
+        exploreObj.takeScreenShot(pathSS,"10-Find a Restaurant whit JSON OK");
+        exploreObj.tapBack();
+        exploreObj.tapBack();
 
-        //Find a Restaurant
+        //11-Selección del valor en base a parámetro
+        exploreObj.whereAreYouGoingClick();
+        exploreObj.enterDestination(exploreObj.getValueJSON("src/main/resources/airbnb/destination.json", "Playa"));
+        exploreObj.removeKeyboard();
+        exploreObj.findDestinationClick("Cancun, Cancún");
+        exploreObj.takeScreenShot(pathSS,"11-Selección del valor en base a parámetro OK");
+        exploreObj.tapBack();
+        exploreObj.tapBack();
+        exploreObj.tapBack();
 
-        //Selección del valor en base a parámetro - Raul
+        //12-Go to Profile and validate Legal
+        barraObj.profileButtonClickTwo();
+        profileObj.swipeToElement(3, BasePage.Direction.UP);
+        Assert.assertTrue(profileObj.verifyLegalText(),"Legal on profile page  is NOT displayed");
+        profileObj.takeScreenShot(pathSS,"12-Go to Profile and validate Legal OK");
 
+        /*
         //Find locations and validate
 
-        //Go to Profile and validate Legal
-
+         */
     }
 }

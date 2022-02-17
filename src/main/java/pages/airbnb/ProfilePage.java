@@ -18,7 +18,14 @@ public class ProfilePage extends BasePage {
     @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Account Settings\")")
     private AndroidElement profileTitle;
 
+    //Legal title
+    @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Legal\")")
+    private AndroidElement legalTitle;
+
+
+
     //Methods
+
     /**
      * Verify Profile Title
      * @return True if Alert is present
@@ -27,6 +34,16 @@ public class ProfilePage extends BasePage {
     public boolean verifyProfileText(){
         System.out.println("Validating if Profile page is present...");
         return profileTitle.isDisplayed();
+    }
+
+    /**
+     * Verify Legal Title
+     * @return True if Alert is present
+     * @throws InterruptedException
+     */
+    public boolean verifyLegalText(){
+        System.out.println("Validating if Legal title is present...");
+        return legalTitle.isDisplayed();
     }
 
 }
