@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="3">
+
+    <test name="TC002">
+        <classes>
+            <class name="airbnb.TestSuit02"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="TC002C">
+        <classes>
+            <class name="airbnb.TestSuit02C"/>
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="TC003">
+        <classes>
+            <class name="airbnb.TestSuit03"/>
+        </classes>
+    </test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -9,26 +9,33 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
 
+import javax.imageio.ImageIO;
 import java.io.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class BasePage {
+
+    public static final String PATH_JSON_DATA = "./src/main/resources/airbnb/testdata/json/";
+    public static final String PATH_EXCEL_DATA = "./src/main/resources/airbnb/testdata/excel/";
+    public static final String PATH_SCREENSHOTS = System.getProperty("user.dir")+"/test-output/screenshots/";
+
 
     protected AndroidDriver driver;
 
@@ -76,11 +83,12 @@ public class BasePage {
 
     /**
      * Remove Keyboard method - Método para remover el teclado
+     * Hide keyboard method
      */
-    public void removeKeyboard(){
-        System.out.println("Trying remove keyboard...");
+    public void hideKeyboard() {
+        System.out.println("Trying to close the keyboard...");
         driver.hideKeyboard();
-        System.out.println("Keyboard removed");
+        System.out.println("Keyboard is closed!.");
     }
 
     /**
@@ -107,6 +115,34 @@ public class BasePage {
         System.out.println("Value obtanied: "+ value);
         return value;
     }
+
+
+    /**
+     * Get Data from JSON file (Directly)
+     *
+     * @author
+     * @param jsonFileObj, jsonKey
+     * @return jsonValue
+     * @throws FileNotFoundException
+     */
+    /*
+    public String getJSONValue(String jsonFileObj, String jsonKey) throws FileNotFoundException {
+        try {
+
+            // JSON Data
+            InputStream inputStream = new FileInputStream(PATH_JSON_DATA + jsonFileObj + ".json");
+            JSONObject jsonObject = new JSONObject(new JSONTokener(inputStream));
+
+            // Get Data
+            String jsonValue = (String) jsonObject.getJSONObject(jsonFileObj).get(jsonKey);
+            return jsonValue;
+
+        } catch (FileNotFoundException e) {
+            Assert.fail("JSON file is not found");
+            return null;
+        }
+    }
+     */
 
     /**
      * Method for read Excel file
@@ -159,6 +195,40 @@ public class BasePage {
     }
 
     /**
+     * Get Value from Excel for coordinates
+     *
+     * @author
+     * @date 02/18/2019
+     */
+    public String getCellData(String excelName, int row, int column) {
+        try {
+            // Reading Data
+            FileInputStream fis = new FileInputStream(PATH_EXCEL_DATA + excelName + ".xlsx");
+            // Constructs an XSSFWorkbook object
+            // notación para evitar warnings que son redundantes.
+            @SuppressWarnings("resource")
+            // Objeto que manejara todo el archivo de excel, genera el objeto hoja (Sheet)
+            Workbook wb = new XSSFWorkbook(fis);
+            // Objeto que maneja las hojas del documento exel
+            Sheet sheet = wb.getSheetAt(0);
+            // Objeto que maneja las filas del archivo excel
+            Row rowObj = sheet.getRow(row);
+            // Objeto que maneja las celdas del archivo excel
+            Cell cell = rowObj.getCell(column);
+            // Obtiene el valor de acuerdo al row y column
+            String value = cell.getStringCellValue();
+            System.out.println(value);
+            return value;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e1) {
+            e1.printStackTrace();
+            return null;
+        }
+    }
+
+    /**
      * Method for take screenshots
      * Take screenshot of the page
      * @param name - Name of the file
@@ -169,12 +239,31 @@ public class BasePage {
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy-HH:mm:ss");
         String formattedLocalDateTime = date.format(formatter);
-        name =name+"_"+formattedLocalDateTime+".jpg";
+        name =name+"_"+formattedLocalDateTime+".png";
         name = name.replaceAll(":",".");
+
         System.out.println("Capturing the snapshot of the page...");
         File srcFiler=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(srcFiler, new File(path+name));
         System.out.println("Snapshot saved!");
+    }
+
+    /**
+     * Take screenshot
+     *
+     * @author
+     * @throws IOException
+     */
+    public String takeScreenshots(String fileName){
+        try {
+            String pathFileName= PATH_SCREENSHOTS + fileName + ".png";
+            Screenshot screenshot = new AShot().takeScreenshot(driver);
+            ImageIO.write(screenshot.getImage(), "PNG", new File(pathFileName));
+            return pathFileName;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            return null;
+        }
     }
 
     /**
@@ -239,9 +328,7 @@ public class BasePage {
             Thread.sleep(ANIMATION_TIME);
         } catch (InterruptedException e) {
             System.err.println("swipeScreen(): TouchAction FAILED\n" + e.getMessage());
-
         }
-
     }
 
     /**
@@ -252,5 +339,49 @@ public class BasePage {
         for (int i = 0; i < swipes; i++){
             swipeScreen(dir);
         }
+    }
+
+    /**
+     * Método para buscar un texto exacto en una interfaz con los swipes necesarios, se le entrga un texto exacto
+     * https://appium.io/docs/en/writing-running-appium/tutorial/swipe/android-simple/
+     * Android 'UIScrollable' swipe: Simple example
+     * Scroll to an element by exact text
+     * @param exactText
+     */
+    public void scrollToText(String exactText){
+        System.out.println("Trying to scroll to exact text...");
+        try {
+            WebElement element = driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()." +
+                    "scrollable(true)).scrollIntoView(new UiSelector().text(\"" + exactText + "\"))");
+            System.out.println("Element was found!");
+        }catch (Exception e){
+            System.out.println("Element was not found");
+        }
+    }
+
+    /**
+     * Método para buscar parte de un texto en una interfaz con los swipes necesarios, se le entrga parte de un texto
+     * https://appium.io/docs/en/writing-running-appium/tutorial/swipe/android-simple/
+     * Android 'UIScrollable' swipe: Simple example
+     * Scroll to an element by partial text
+     * @param partialText
+     */
+    public void scrollToPartialText(String partialText){
+        System.out.println("Trying to scroll to partial text...");
+        try {
+            WebElement element = driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()." +
+                    "scrollable(true)).scrollIntoView(new UiSelector().textContains(\""+partialText+"\"))");
+            System.out.println("Element was found!");
+        }catch (Exception e){
+            System.out.println("Element was not found");
+        }
+    }
+
+    /**
+     * method for reporter
+     * @param log
+     */
+    public void reporter(String log) {
+        Reporter.log(log);
     }
 }

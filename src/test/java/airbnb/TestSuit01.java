@@ -8,14 +8,15 @@ import pages.airbnb.BarraPage;
 import pages.airbnb.ExplorePage;
 import pages.airbnb.LoginPage;
 import pages.airbnb.ProfilePage;
+
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class TestAirbnb extends BaseTest {
+public class TestSuit01 extends BaseTest {
 
-    @Test(priority = 1, groups = "template")
-    public void testAirbnbApp() throws InterruptedException, IOException {
+    @Test(priority = 1, groups = "login")
+    public void testCase01() throws InterruptedException, IOException {
 
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy-HH:mm:ss");

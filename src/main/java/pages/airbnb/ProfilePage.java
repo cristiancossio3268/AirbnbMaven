@@ -22,7 +22,10 @@ public class ProfilePage extends BasePage {
     @AndroidFindBy(uiAutomator = "new UiSelector().text(\"Legal\")")
     private AndroidElement legalTitle;
 
-
+    //Locator que realiza swipe en toda la pagina hasta encontrar el texto indicado, se puede realizar la búsqueda por exactitud o por partes.
+    //https://appium.io/docs/en/writing-running-appium/tutorial/swipe/android-simple/#search-by-text
+    @AndroidFindBy(uiAutomator = "new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(new UiSelector().text(\"Legal\"))")
+    private AndroidElement legalTextScroll;
 
     //Methods
 
@@ -32,6 +35,7 @@ public class ProfilePage extends BasePage {
      * @throws InterruptedException
      */
     public boolean verifyProfileText(){
+        reporter("Validating if Profile page is present...");
         System.out.println("Validating if Profile page is present...");
         return profileTitle.isDisplayed();
     }
@@ -42,8 +46,9 @@ public class ProfilePage extends BasePage {
      * @throws InterruptedException
      */
     public boolean verifyLegalText(){
+        reporter("Validating if Legal title is present...");
         System.out.println("Validating if Legal title is present...");
-        return legalTitle.isDisplayed();
+        return legalTextScroll.isDisplayed();
     }
 
 }

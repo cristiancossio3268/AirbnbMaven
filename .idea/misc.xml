@@ -11,4 +11,11 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="jsonEditor">
+    <option name="stateMap">
+      <map>
+        <entry key="AirbnbMaven" value="{&#10;  &quot;destinations&quot;:[&#10;    {&#10;      &quot;Playa&quot;:&quot;Cancun&quot;&#10;    },&#10;    {&#10;      &quot;Ciudad&quot;:&quot;New York&quot;&#10;    },&#10;    {&#10;      &quot;Cataratas&quot;:&quot;Iguazu&quot;&#10;    },&#10;    {&#10;      &quot;Restaurante&quot;:&quot;Burgalhau&quot;&#10;    }&#10;  ]&#10;}" />
+      </map>
+    </option>
+  </component>
 </project>

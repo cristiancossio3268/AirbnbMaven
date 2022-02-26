@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Look for destination whit JSON]]>
+    </line>
+    <line>
+      <![CDATA[Trying to check if Explore page is present...]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on Where are you going method...]]>
+    </line>
+    <line>
+      <![CDATA[Where are you going clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Trying to enter destination field...]]>
+    </line>
+    <line>
+      <![CDATA[Destination entered]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click back arrow...]]>
+    </line>
+    <line>
+      <![CDATA[Back arrow was clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Look for destination whit Excel]]>
+    </line>
+    <line>
+      <![CDATA[Trying to check if Explore page is present...]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on Where are you going method...]]>
+    </line>
+    <line>
+      <![CDATA[Where are you going clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Trying to enter destination field...]]>
+    </line>
+    <line>
+      <![CDATA[Destination entered]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click back arrow...]]>
+    </line>
+    <line>
+      <![CDATA[Back arrow was clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Find a Restaurant whit JSON]]>
+    </line>
+    <line>
+      <![CDATA[Trying to check if Explore page is present...]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on Where are you going method...]]>
+    </line>
+    <line>
+      <![CDATA[Where are you going clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Trying to enter destination field...]]>
+    </line>
+    <line>
+      <![CDATA[Destination entered]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click back arrow...]]>
+    </line>
+    <line>
+      <![CDATA[Back arrow was clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Select a value from result search based on a text]]>
+    </line>
+    <line>
+      <![CDATA[Trying to check if Explore page is present...]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click on Where are you going method...]]>
+    </line>
+    <line>
+      <![CDATA[Where are you going clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Trying to enter destination field...]]>
+    </line>
+    <line>
+      <![CDATA[Destination entered]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click final destination...]]>
+    </line>
+    <line>
+      <![CDATA[List size: 5]]>
+    </line>
+    <line>
+      <![CDATA[Values found:]]>
+    </line>
+    <line>
+      <![CDATA[Cancun, Cancún]]>
+    </line>
+    <line>
+      <![CDATA[Cancun - Chetumal, Playacar, Playa del Carmen, Q.R.]]>
+    </line>
+    <line>
+      <![CDATA[Cancún, Mexico]]>
+    </line>
+    <line>
+      <![CDATA[Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Quintana Roo]]>
+    </line>
+    <line>
+      <![CDATA[Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Q.R.]]>
+    </line>
+    <line>
+      <![CDATA[Search parameter found]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click back arrow...]]>
+    </line>
+    <line>
+      <![CDATA[Back arrow was clicked!]]>
+    </line>
+    <line>
+      <![CDATA[Trying to click back arrow...]]>
+    </line>
+    <line>
+      <![CDATA[Back arrow was clicked!]]>
+    </line>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="35953" started-at="2022-02-26T10:52:34 CLST" finished-at="2022-02-26T10:53:10 CLST">
+    <groups>
+      <group name="destinations">
+        <method signature="TestSuit02C.TC001_lookForDestinationWhitJSON()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC001_lookForDestinationWhitJSON" class="airbnb.TestSuit02C"/>
+        <method signature="TestSuit02C.TC002_lookForDestinationWhitExcel()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC002_lookForDestinationWhitExcel" class="airbnb.TestSuit02C"/>
+        <method signature="TestSuit02C.TC003_findRestaurantWhitJSON()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC003_findRestaurantWhitJSON" class="airbnb.TestSuit02C"/>
+        <method signature="TestSuit02C.TC004_selectValueFromResultSearchBasedOnText()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC004_selectValueFromResultSearchBasedOnText" class="airbnb.TestSuit02C"/>
+      </group> <!-- destinations -->
+    </groups>
+    <test name="AirbnbMaven" duration-ms="35953" started-at="2022-02-26T10:52:34 CLST" finished-at="2022-02-26T10:53:10 CLST">
+      <class name="airbnb.TestSuit02C">
+        <test-method status="PASS" signature="setup()[pri:0, instance:airbnb.TestSuit02C@2c039ac6]" name="setup" is-config="true" duration-ms="8094" started-at="2022-02-26T10:52:34 CLST" finished-at="2022-02-26T10:52:42 CLST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TC001_lookForDestinationWhitJSON()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC001_lookForDestinationWhitJSON" duration-ms="9177" started-at="2022-02-26T10:52:42 CLST" finished-at="2022-02-26T10:52:51 CLST">
+          <reporter-output>
+            <line>
+              <![CDATA[Look for destination whit JSON]]>
+            </line>
+            <line>
+              <![CDATA[Trying to check if Explore page is present...]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on Where are you going method...]]>
+            </line>
+            <line>
+              <![CDATA[Where are you going clicked!]]>
+            </line>
+            <line>
+              <![CDATA[Trying to enter destination field...]]>
+            </line>
+            <line>
+              <![CDATA[Destination entered]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click back arrow...]]>
+            </line>
+            <line>
+              <![CDATA[Back arrow was clicked!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC001_lookForDestinationWhitJSON -->
+        <test-method status="PASS" signature="TC002_lookForDestinationWhitExcel()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC002_lookForDestinationWhitExcel" duration-ms="5098" started-at="2022-02-26T10:52:51 CLST" finished-at="2022-02-26T10:52:56 CLST">
+          <reporter-output>
+            <line>
+              <![CDATA[Look for destination whit Excel]]>
+            </line>
+            <line>
+              <![CDATA[Trying to check if Explore page is present...]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on Where are you going method...]]>
+            </line>
+            <line>
+              <![CDATA[Where are you going clicked!]]>
+            </line>
+            <line>
+              <![CDATA[Trying to enter destination field...]]>
+            </line>
+            <line>
+              <![CDATA[Destination entered]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click back arrow...]]>
+            </line>
+            <line>
+              <![CDATA[Back arrow was clicked!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC002_lookForDestinationWhitExcel -->
+        <test-method status="PASS" signature="TC003_findRestaurantWhitJSON()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC003_findRestaurantWhitJSON" duration-ms="4268" started-at="2022-02-26T10:52:56 CLST" finished-at="2022-02-26T10:53:01 CLST">
+          <reporter-output>
+            <line>
+              <![CDATA[Find a Restaurant whit JSON]]>
+            </line>
+            <line>
+              <![CDATA[Trying to check if Explore page is present...]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on Where are you going method...]]>
+            </line>
+            <line>
+              <![CDATA[Where are you going clicked!]]>
+            </line>
+            <line>
+              <![CDATA[Trying to enter destination field...]]>
+            </line>
+            <line>
+              <![CDATA[Destination entered]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click back arrow...]]>
+            </line>
+            <line>
+              <![CDATA[Back arrow was clicked!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC003_findRestaurantWhitJSON -->
+        <test-method status="PASS" signature="TC004_selectValueFromResultSearchBasedOnText()[pri:1, instance:airbnb.TestSuit02C@2c039ac6]" name="TC004_selectValueFromResultSearchBasedOnText" duration-ms="9046" started-at="2022-02-26T10:53:01 CLST" finished-at="2022-02-26T10:53:10 CLST">
+          <reporter-output>
+            <line>
+              <![CDATA[Select a value from result search based on a text]]>
+            </line>
+            <line>
+              <![CDATA[Trying to check if Explore page is present...]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click on Where are you going method...]]>
+            </line>
+            <line>
+              <![CDATA[Where are you going clicked!]]>
+            </line>
+            <line>
+              <![CDATA[Trying to enter destination field...]]>
+            </line>
+            <line>
+              <![CDATA[Destination entered]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click final destination...]]>
+            </line>
+            <line>
+              <![CDATA[List size: 5]]>
+            </line>
+            <line>
+              <![CDATA[Values found:]]>
+            </line>
+            <line>
+              <![CDATA[Cancun, Cancún]]>
+            </line>
+            <line>
+              <![CDATA[Cancun - Chetumal, Playacar, Playa del Carmen, Q.R.]]>
+            </line>
+            <line>
+              <![CDATA[Cancún, Mexico]]>
+            </line>
+            <line>
+              <![CDATA[Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Quintana Roo]]>
+            </line>
+            <line>
+              <![CDATA[Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Q.R.]]>
+            </line>
+            <line>
+              <![CDATA[Search parameter found]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click back arrow...]]>
+            </line>
+            <line>
+              <![CDATA[Back arrow was clicked!]]>
+            </line>
+            <line>
+              <![CDATA[Trying to click back arrow...]]>
+            </line>
+            <line>
+              <![CDATA[Back arrow was clicked!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC004_selectValueFromResultSearchBasedOnText -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:airbnb.TestSuit02C@2c039ac6]" name="tearDown" is-config="true" duration-ms="243" started-at="2022-02-26T10:53:10 CLST" finished-at="2022-02-26T10:53:10 CLST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- airbnb.TestSuit02C -->
+    </test> <!-- AirbnbMaven -->
+  </suite> <!-- Default Suite -->
+</testng-results>

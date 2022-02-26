@@ -3,8 +3,8 @@ package core;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -14,7 +14,7 @@ public class BaseTest {
 
     AndroidDriver<AndroidElement> driver;
 
-    @BeforeTest
+    @BeforeClass(groups = "setup")
     public void setup() throws MalformedURLException {
         //Desired Capabilities
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -24,13 +24,16 @@ public class BaseTest {
         capabilities.setCapability("appPackage", "com.airbnb.android");
         //capabilities.setCapability("app", "/Users/ivanrivas/AirbnbMaven/src/main/resources/Selendroid/selendroid-test-app.apk");
 
+        System.out.println("Creando el driver...");
         driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
+        System.out.println("Driver creado!");
 
         //Implicit wait
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        System.out.println("Implicit wait set");
     }
 
-    @AfterTest
+    @AfterClass(groups = "setup")
     public void tearDown(){
         driver.quit();
     }

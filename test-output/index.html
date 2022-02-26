@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_Suite">
+              <span class="suite-name border-passed">Default Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_Suite">
+                    <span>C:\Users\crist\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_Suite">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods passed suite-Default_Suite"> (hide)</a> <!-- hide-methods passed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods passed suite-Default_Suite"> (show)</a> <!-- show-methods passed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="airbnb.TestSuit02C" hash-for-method="TC001_lookForDestinationWhitJSON">TC001_lookForDestinationWhitJSON</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="airbnb.TestSuit02C" hash-for-method="TC002_lookForDestinationWhitExcel">TC002_lookForDestinationWhitExcel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="airbnb.TestSuit02C" hash-for-method="TC003_findRestaurantWhitJSON">TC003_findRestaurantWhitJSON</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="airbnb.TestSuit02C" hash-for-method="TC004_selectValueFromResultSearchBasedOnText">TC004_selectValueFromResultSearchBasedOnText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">airbnb.TestSuit02C</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_lookForDestinationWhitJSON">
+                  </a> <!-- TC001_lookForDestinationWhitJSON -->
+                  <span class="method-name">TC001_lookForDestinationWhitJSON</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_lookForDestinationWhitExcel">
+                  </a> <!-- TC002_lookForDestinationWhitExcel -->
+                  <span class="method-name">TC002_lookForDestinationWhitExcel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_findRestaurantWhitJSON">
+                  </a> <!-- TC003_findRestaurantWhitJSON -->
+                  <span class="method-name">TC003_findRestaurantWhitJSON</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC004_selectValueFromResultSearchBasedOnText">
+                  </a> <!-- TC004_selectValueFromResultSearchBasedOnText -->
+                  <span class="method-name">TC004_selectValueFromResultSearchBasedOnText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+        </div> <!-- panel Default_Suite -->
+        <div panel-name="test-xml-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\crist\AppData\Local\JetBrains\IdeaIC2021.3\temp-testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AirbnbMaven&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;airbnb.TestSuit02C&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AirbnbMaven --&gt;
+&lt;/suite&gt; &lt;!-- Default Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AirbnbMaven (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">destinations</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC001_lookForDestinationWhitJSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC002_lookForDestinationWhitExcel</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC003_findRestaurantWhitJSON</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC004_selectValueFromResultSearchBasedOnText</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_Suite');
+function tableData_Default_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC001_lookForDestinationWhitJSON')
+data.setCell(0, 2, 'airbnb.TestSuit02C')
+data.setCell(0, 3, 9177);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC004_selectValueFromResultSearchBasedOnText')
+data.setCell(1, 2, 'airbnb.TestSuit02C')
+data.setCell(1, 3, 9046);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC002_lookForDestinationWhitExcel')
+data.setCell(2, 2, 'airbnb.TestSuit02C')
+data.setCell(2, 3, 5098);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC003_findRestaurantWhitJSON')
+data.setCell(3, 2, 'airbnb.TestSuit02C')
+data.setCell(3, 3, 4268);
+window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <div id="times-div-Default_Suite">
+              </div> <!-- times-div-Default_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC004_selectValueFromResultSearchBasedOnText</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Select a value from result search based on a text</span>
+                <span class="reporter-method-output">Trying to check if Explore page is present...</span>
+                <span class="reporter-method-output">Trying to click on Where are you going method...</span>
+                <span class="reporter-method-output">Where are you going clicked!</span>
+                <span class="reporter-method-output">Trying to enter destination field...</span>
+                <span class="reporter-method-output">Destination entered</span>
+                <span class="reporter-method-output">Trying to click final destination...</span>
+                <span class="reporter-method-output">List size: 5</span>
+                <span class="reporter-method-output">Values found:</span>
+                <span class="reporter-method-output">Cancun, Cancún</span>
+                <span class="reporter-method-output">Cancun - Chetumal, Playacar, Playa del Carmen, Q.R.</span>
+                <span class="reporter-method-output">Cancún, Mexico</span>
+                <span class="reporter-method-output">Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Quintana Roo</span>
+                <span class="reporter-method-output">Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Q.R.</span>
+                <span class="reporter-method-output">Search parameter found</span>
+                <span class="reporter-method-output">Trying to click back arrow...</span>
+                <span class="reporter-method-output">Back arrow was clicked!</span>
+                <span class="reporter-method-output">Trying to click back arrow...</span>
+                <span class="reporter-method-output">Back arrow was clicked!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC001_lookForDestinationWhitJSON</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Look for destination whit JSON</span>
+                <span class="reporter-method-output">Trying to check if Explore page is present...</span>
+                <span class="reporter-method-output">Trying to click on Where are you going method...</span>
+                <span class="reporter-method-output">Where are you going clicked!</span>
+                <span class="reporter-method-output">Trying to enter destination field...</span>
+                <span class="reporter-method-output">Destination entered</span>
+                <span class="reporter-method-output">Trying to click back arrow...</span>
+                <span class="reporter-method-output">Back arrow was clicked!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC003_findRestaurantWhitJSON</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Find a Restaurant whit JSON</span>
+                <span class="reporter-method-output">Trying to check if Explore page is present...</span>
+                <span class="reporter-method-output">Trying to click on Where are you going method...</span>
+                <span class="reporter-method-output">Where are you going clicked!</span>
+                <span class="reporter-method-output">Trying to enter destination field...</span>
+                <span class="reporter-method-output">Destination entered</span>
+                <span class="reporter-method-output">Trying to click back arrow...</span>
+                <span class="reporter-method-output">Back arrow was clicked!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC002_lookForDestinationWhitExcel</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Look for destination whit Excel</span>
+                <span class="reporter-method-output">Trying to check if Explore page is present...</span>
+                <span class="reporter-method-output">Trying to click on Where are you going method...</span>
+                <span class="reporter-method-output">Where are you going clicked!</span>
+                <span class="reporter-method-output">Trying to enter destination field...</span>
+                <span class="reporter-method-output">Destination entered</span>
+                <span class="reporter-method-output">Trying to click back arrow...</span>
+                <span class="reporter-method-output">Back arrow was clicked!</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">airbnb.TestSuit02C</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">TC001_lookForDestinationWhitJSON</span>
+                <span class="method-start">8102 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC002_lookForDestinationWhitExcel</span>
+                <span class="method-start">17283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC003_findRestaurantWhitJSON</span>
+                <span class="method-start">22382 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC004_selectValueFromResultSearchBasedOnText</span>
+                <span class="method-start">26650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35697 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

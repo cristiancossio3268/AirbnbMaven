@@ -1,0 +1,327 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 23 11:18:53 CLST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>93 seconds (93441 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>destinations profile setup </td>
+</tr><tr>
+<td>Excluded groups:</td><td>template </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='airbnb.TestSuit03.TC004_goToProfileAndValidateLegal()'><b>TC004_goToProfileAndValidateLegal</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-1579584742" onClick='toggleBox("Output-1579584742", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1579584742" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1579584742">
+Validating if Profile page is present...<br/>
+Validating if Legal title is present...<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit02.TC003_findRestaurantWhitJSON()'><b>TC003_findRestaurantWhitJSON</b><br>Test class: airbnb.TestSuit02<br/>
+<a href="#Output-438123546" onClick='toggleBox("Output-438123546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438123546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438123546">
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>airbnb.TestSuit02@26a7b76d</td></tr>
+<tr>
+<td title='airbnb.TestSuit02.TC002_lookForDestinationWhitExcel()'><b>TC002_lookForDestinationWhitExcel</b><br>Test class: airbnb.TestSuit02<br/>
+<a href="#Output-2044282225" onClick='toggleBox("Output-2044282225", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044282225" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044282225">
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>airbnb.TestSuit02@26a7b76d</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC006_scrollToPartialText()'><b>TC006_scrollToPartialText</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-627709989" onClick='toggleBox("Output-627709989", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-627709989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-627709989">
+Validating if Profile page is present...<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit02.TC004_selectValueFromResultSearchBasedOnText()'><b>TC004_selectValueFromResultSearchBasedOnText</b><br>Test class: airbnb.TestSuit02<br/>
+<a href="#Output-1107772887" onClick='toggleBox("Output-1107772887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1107772887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1107772887">
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click final destination...<br/>
+List size: 5<br/>
+Values found:<br/>
+Cancun, Cancún<br/>
+Cancun - Chetumal, Playacar, Playa del Carmen, Q.R.<br/>
+Cancún, Mexico<br/>
+Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Quintana Roo<br/>
+Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Q.R.<br/>
+Search parameter found<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>airbnb.TestSuit02@26a7b76d</td></tr>
+<tr>
+<td title='airbnb.TestSuit02C.TC003_findRestaurantWhitJSON()'><b>TC003_findRestaurantWhitJSON</b><br>Test class: airbnb.TestSuit02C<br/>
+<a href="#Output-1248435962" onClick='toggleBox("Output-1248435962", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1248435962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1248435962">
+Find a Restaurant whit JSON<br/>
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>airbnb.TestSuit02C@4abdb505</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC001_clickOnProfile()'><b>TC001_clickOnProfile</b><br>Test class: airbnb.TestSuit03</td>
+<td></td>
+<td>3</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit02C.TC001_lookForDestinationWhitJSON()'><b>TC001_lookForDestinationWhitJSON</b><br>Test class: airbnb.TestSuit02C<br/>
+<a href="#Output-1898751355" onClick='toggleBox("Output-1898751355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1898751355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1898751355">
+Look for destination whit JSON<br/>
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>airbnb.TestSuit02C@4abdb505</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC003_swipeToGetBottomOfTheScreen()'><b>TC003_swipeToGetBottomOfTheScreen</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-79706679" onClick='toggleBox("Output-79706679", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-79706679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-79706679">
+Validating if Profile page is present...<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit02.TC001_lookForDestinationWhitJSON()'><b>TC001_lookForDestinationWhitJSON</b><br>Test class: airbnb.TestSuit02<br/>
+<a href="#Output-519492428" onClick='toggleBox("Output-519492428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-519492428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-519492428">
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>airbnb.TestSuit02@26a7b76d</td></tr>
+<tr>
+<td title='airbnb.TestSuit02C.TC002_lookForDestinationWhitExcel()'><b>TC002_lookForDestinationWhitExcel</b><br>Test class: airbnb.TestSuit02C<br/>
+<a href="#Output-35864696" onClick='toggleBox("Output-35864696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-35864696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-35864696">
+Look for destination whit Excel<br/>
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>airbnb.TestSuit02C@4abdb505</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC007_screenShotOfProfileBottomPage()'><b>TC007_screenShotOfProfileBottomPage</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-837233852" onClick='toggleBox("Output-837233852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-837233852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-837233852">
+Validating if Profile page is present...<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC005_scrollToExactlyText()'><b>TC005_scrollToExactlyText</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-673367807" onClick='toggleBox("Output-673367807", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673367807" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673367807">
+Validating if Profile page is present...<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+<tr>
+<td title='airbnb.TestSuit02C.TC004_selectValueFromResultSearchBasedOnText()'><b>TC004_selectValueFromResultSearchBasedOnText</b><br>Test class: airbnb.TestSuit02C<br/>
+<a href="#Output-1566099239" onClick='toggleBox("Output-1566099239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1566099239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1566099239">
+Select a value from result search based on a text<br/>
+Trying to check if Explore page is present...<br/>
+Trying to click on Where are you going method...<br/>
+Where are you going clicked!<br/>
+Trying to enter destination field...<br/>
+Destination entered<br/>
+Trying to click final destination...<br/>
+List size: 5<br/>
+Values found:<br/>
+Cancun, Cancún<br/>
+Cancun - Chetumal, Playacar, Playa del Carmen, Q.R.<br/>
+Cancún, Mexico<br/>
+Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Quintana Roo<br/>
+Cancún - Punta Nizuc, Punta Cancun, Zona Hotelera, Cancún, Q.R.<br/>
+Search parameter found<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+Trying to click back arrow...<br/>
+Back arrow was clicked!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>airbnb.TestSuit02C@4abdb505</td></tr>
+<tr>
+<td title='airbnb.TestSuit03.TC002_verifyProfilePage()'><b>TC002_verifyProfilePage</b><br>Test class: airbnb.TestSuit03<br/>
+<a href="#Output-1188623367" onClick='toggleBox("Output-1188623367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1188623367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1188623367">
+Validating if Profile page is present...<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>airbnb.TestSuit03@1500955a</td></tr>
+</table><p>
+</body>
+</html>
