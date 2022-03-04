@@ -1,0 +1,180 @@
+{
+  "uid" : "abb0cfe5ca6b76df",
+  "name" : "TC003_swipeToGetBottomOfTheScreen",
+  "fullName" : "airbnb.TestSuit03Allure.TC003_swipeToGetBottomOfTheScreen",
+  "historyId" : "a089c93d3ddd3e76d8dcde2cd7b3915c",
+  "time" : {
+    "start" : 1646391338953,
+    "stop" : 1646391343272,
+    "duration" : 4319
+  },
+  "description" : "Swipe to get bottom of the screen",
+  "descriptionHtml" : "<p>Swipe to get bottom of the screen</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1646391327727,
+      "stop" : 1646391333702,
+      "duration" : 5975
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creación de driver",
+      "time" : {
+        "start" : 1646391327727,
+        "stop" : 1646391333702,
+        "duration" : 5975
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "testStage" : {
+    "description" : "Swipe to get bottom of the screen",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Scroll to exact text",
+      "time" : {
+        "start" : 1646391338953,
+        "stop" : 1646391339075,
+        "duration" : 122
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "exactText",
+        "value" : "Account Settings"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Verify Profile Title",
+      "time" : {
+        "start" : 1646391339075,
+        "stop" : 1646391339187,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Swipes to an element",
+      "time" : {
+        "start" : 1646391339188,
+        "stop" : 1646391343272,
+        "duration" : 4084
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "swipes",
+        "value" : "3"
+      }, {
+        "name" : "dir",
+        "value" : "UP"
+      } ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1646391369585,
+      "stop" : 1646391369879,
+      "duration" : 294
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "testClass",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC003_swipeToGetBottomOfTheScreen"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite Allure"
+  }, {
+    "name" : "suite",
+    "value" : "D:/OneDrive/Proyectos/P_IntelliJ_IDEA/AirbnbMaven"
+  }, {
+    "name" : "subSuite",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "host",
+    "value" : "CRISS-NOTE-WORK"
+  }, {
+    "name" : "thread",
+    "value" : "12936@CRISS-NOTE-WORK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "abb0cfe5ca6b76df.json",
+  "parameterValues" : [ ]
+}

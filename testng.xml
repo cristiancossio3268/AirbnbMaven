@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite Allure">
     <test verbose="2" preserve-order="true" name="D:/OneDrive/Proyectos/P_IntelliJ_IDEA/AirbnbMaven">
         <classes>
-            <class name="airbnb.TestAirbnb">
-                <methods>
-                    <exclude name="testAirbnbApp"/>
-                </methods>
-            </class>
-            <class name="airbnb.TestSuit01">
-                <methods>
-                    <exclude name="testCase01"/>
-                </methods>
-            </class>
-            <class name="airbnb.TestSuit02">
+            <class name="airbnb.TestSuit02Allure">
                 <methods>
                     <include name="TC001_lookForDestinationWhitJSON"/>
                     <include name="TC002_lookForDestinationWhitExcel"/>
@@ -21,7 +11,7 @@
                     <include name="TC004_selectValueFromResultSearchBasedOnText"/>
                 </methods>
             </class>
-            <class name="airbnb.TestSuit03">
+            <class name="airbnb.TestSuit03Allure">
                 <methods>
                     <include name="TC001_clickOnProfile"/>
                     <include name="TC002_verifyProfilePage"/>
@@ -29,6 +19,7 @@
                     <include name="TC004_goToProfileAndValidateLegal"/>
                     <include name="TC005_scrollToExactlyText"/>
                     <include name="TC006_scrollToPartialText"/>
+                    <include name="TC007_screenShotOfProfileBottomPage"/>
                 </methods>
             </class>
         </classes>

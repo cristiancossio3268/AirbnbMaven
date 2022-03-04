@@ -2,17 +2,18 @@ package airbnb;
 
 import core.BasePage;
 import core.BaseTest;
-import core.utils.listeners.CustomListener;
+import core.utils.listeners.AllureListener;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.airbnb.BarraPage;
 import pages.airbnb.ProfilePage;
+
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@Listeners(CustomListener.class)
+@Listeners(AllureListener.class)
 public class TestSuit03 extends BaseTest {
 
     //Class objects

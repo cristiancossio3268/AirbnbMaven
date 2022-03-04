@@ -2,6 +2,7 @@ package core;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -12,9 +13,10 @@ import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
-    AndroidDriver<AndroidElement> driver;
+    protected AndroidDriver<AndroidElement> driver;
 
     @BeforeClass(groups = "setup")
+    @Step("Creación de driver")
     public void setup() throws MalformedURLException {
         //Desired Capabilities
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -34,14 +36,16 @@ public class BaseTest {
     }
 
     @AfterClass(groups = "setup")
+
     public void tearDown(){
+
         driver.quit();
     }
-
     /**
      * Get Driver method
      */
     public AndroidDriver getDriver(){
         return driver;
     }
+
 }

@@ -1,0 +1,111 @@
+[ {
+  "uid" : "6661fe2fd5ea3e8a",
+  "name" : "Scenario Verify Profile page",
+  "time" : {
+    "start" : 1646393742727,
+    "stop" : 1646393744334,
+    "duration" : 1607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bebf63d76a292bc1",
+  "name" : "Scenario Look for destination whit JSON",
+  "time" : {
+    "start" : 1646393706268,
+    "stop" : 1646393713796,
+    "duration" : 7528
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "615f4788e99ac084",
+  "name" : "Scenario Select a value from result search based on a text",
+  "time" : {
+    "start" : 1646393725217,
+    "stop" : 1646393732330,
+    "duration" : 7113
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "3714c59bf5f6439e",
+  "name" : "Scenario Swipe to get bottom of the screen",
+  "time" : {
+    "start" : 1646393744337,
+    "stop" : 1646393748351,
+    "duration" : 4014
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7521d93c1532acc2",
+  "name" : "Scenario Scroll to exactly text Learn about hosting",
+  "time" : {
+    "start" : 1646393758714,
+    "stop" : 1646393765733,
+    "duration" : 7019
+  },
+  "status" : "passed",
+  "severity" : "trivial"
+}, {
+  "uid" : "618d8c8622b45dc1",
+  "name" : "Scenario Look for destination whit Excel",
+  "time" : {
+    "start" : 1646393714077,
+    "stop" : 1646393719339,
+    "duration" : 5262
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "51fa15c4408560cb",
+  "name" : "Scenario Scroll to partial text money",
+  "time" : {
+    "start" : 1646393765735,
+    "stop" : 1646393768564,
+    "duration" : 2829
+  },
+  "status" : "failed",
+  "severity" : "trivial"
+}, {
+  "uid" : "c2dfb0ca52cc8b0f",
+  "name" : "Scenario Go to Profile and validate Legal",
+  "time" : {
+    "start" : 1646393748354,
+    "stop" : 1646393758710,
+    "duration" : 10356
+  },
+  "status" : "passed",
+  "severity" : "minor"
+}, {
+  "uid" : "bf14add0835921d5",
+  "name" : "Scenario Find a Restaurant whit JSON",
+  "time" : {
+    "start" : 1646393719345,
+    "stop" : 1646393725213,
+    "duration" : 5868
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "292d1a366465e265",
+  "name" : "Scenario Click on Profile",
+  "time" : {
+    "start" : 1646393738615,
+    "stop" : 1646393742724,
+    "duration" : 4109
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "48ee01f1dc0085f7",
+  "name" : "Scenario Screenshot of Profile bottom page",
+  "time" : {
+    "start" : 1646393768567,
+    "stop" : 1646393768893,
+    "duration" : 326
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+} ]

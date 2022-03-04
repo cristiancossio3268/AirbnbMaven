@@ -1,0 +1,111 @@
+[ {
+  "uid" : "9a5ead60fbbe8085",
+  "name" : "TC007_screenShotOfProfileBottomPage",
+  "time" : {
+    "start" : 1646391369220,
+    "stop" : 1646391369584,
+    "duration" : 364
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a58036acfb0559b7",
+  "name" : "TC001_lookForDestinationWhitJSON",
+  "time" : {
+    "start" : 1646391299925,
+    "stop" : 1646391308879,
+    "duration" : 8954
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2eb1dbd26208aef",
+  "name" : "TC001_clickOnProfile",
+  "time" : {
+    "start" : 1646391333710,
+    "stop" : 1646391337476,
+    "duration" : 3766
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d7351301451905ea",
+  "name" : "TC006_scrollToPartialText",
+  "time" : {
+    "start" : 1646391367359,
+    "stop" : 1646391369219,
+    "duration" : 1860
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "161af9329a7d2b20",
+  "name" : "TC003_findRestaurantWhitJSON",
+  "time" : {
+    "start" : 1646391314424,
+    "stop" : 1646391319056,
+    "duration" : 4632
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b8b905cef62caf77",
+  "name" : "TC004_goToProfileAndValidateLegal",
+  "time" : {
+    "start" : 1646391343276,
+    "stop" : 1646391357677,
+    "duration" : 14401
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46f470c1517cd8d5",
+  "name" : "TC002_verifyProfilePage",
+  "time" : {
+    "start" : 1646391337478,
+    "stop" : 1646391338950,
+    "duration" : 1472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "40f208d299f0dee7",
+  "name" : "TC002_lookForDestinationWhitExcel",
+  "time" : {
+    "start" : 1646391309097,
+    "stop" : 1646391314407,
+    "duration" : 5310
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c96b05512bcdede0",
+  "name" : "TC005_scrollToExactlyText",
+  "time" : {
+    "start" : 1646391357680,
+    "stop" : 1646391367357,
+    "duration" : 9677
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cca54ae451807e8b",
+  "name" : "TC004_selectValueFromResultSearchBasedOnText",
+  "time" : {
+    "start" : 1646391319060,
+    "stop" : 1646391327444,
+    "duration" : 8384
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abb0cfe5ca6b76df",
+  "name" : "TC003_swipeToGetBottomOfTheScreen",
+  "time" : {
+    "start" : 1646391338953,
+    "stop" : 1646391343272,
+    "duration" : 4319
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

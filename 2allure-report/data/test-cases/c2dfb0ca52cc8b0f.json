@@ -1,0 +1,171 @@
+{
+  "uid" : "c2dfb0ca52cc8b0f",
+  "name" : "Scenario Go to Profile and validate Legal",
+  "fullName" : "airbnb.TestSuit03Allure.TC004_goToProfileAndValidateLegal",
+  "historyId" : "16d33f4b524e99e0de7f988e118db5ee",
+  "time" : {
+    "start" : 1646393748354,
+    "stop" : 1646393758710,
+    "duration" : 10356
+  },
+  "description" : "Go to Profile and validate Legal",
+  "descriptionHtml" : "<p>Go to Profile and validate Legal</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1646393732604,
+      "stop" : 1646393738609,
+      "duration" : 6005
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creación de driver",
+      "time" : {
+        "start" : 1646393732604,
+        "stop" : 1646393738609,
+        "duration" : 6005
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Go to Profile and validate Legal",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Scroll to exact text",
+      "time" : {
+        "start" : 1646393748355,
+        "stop" : 1646393753410,
+        "duration" : 5055
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "exactText",
+        "value" : "Account Settings"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify Profile Title",
+      "time" : {
+        "start" : 1646393753410,
+        "stop" : 1646393753479,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1646393768894,
+      "stop" : 1646393769165,
+      "duration" : 271
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "testClass",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC004_goToProfileAndValidateLegal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite Allure"
+  }, {
+    "name" : "suite",
+    "value" : "D:/OneDrive/Proyectos/P_IntelliJ_IDEA/AirbnbMaven"
+  }, {
+    "name" : "subSuite",
+    "value" : "airbnb.TestSuit03Allure"
+  }, {
+    "name" : "host",
+    "value" : "CRISS-NOTE-WORK"
+  }, {
+    "name" : "thread",
+    "value" : "8720@CRISS-NOTE-WORK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Verify"
+  }, {
+    "name" : "feature",
+    "value" : "ProfilePage Tests"
+  }, {
+    "name" : "epic",
+    "value" : "Regression Tests"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c2dfb0ca52cc8b0f.json",
+  "parameterValues" : [ ]
+}

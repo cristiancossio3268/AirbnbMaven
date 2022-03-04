@@ -1,0 +1,240 @@
+{
+  "uid" : "615f4788e99ac084",
+  "name" : "Scenario Select a value from result search based on a text",
+  "fullName" : "airbnb.TestSuit02Allure.TC004_selectValueFromResultSearchBasedOnText",
+  "historyId" : "5933b5539004081086b1828963fb9acf",
+  "time" : {
+    "start" : 1646393725217,
+    "stop" : 1646393732330,
+    "duration" : 7113
+  },
+  "description" : "Select a value from result search based on a text",
+  "descriptionHtml" : "<p>Select a value from result search based on a text</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1646393698258,
+      "stop" : 1646393706194,
+      "duration" : 7936
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Creación de driver",
+      "time" : {
+        "start" : 1646393698278,
+        "stop" : 1646393706192,
+        "duration" : 7914
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Select a value from result search based on a text",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Check if Explore page is present",
+      "time" : {
+        "start" : 1646393725218,
+        "stop" : 1646393725272,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Read JSON file",
+      "time" : {
+        "start" : 1646393725273,
+        "stop" : 1646393725273,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "path",
+        "value" : "src/main/resources/airbnb/destinations.json"
+      }, {
+        "name" : "param",
+        "value" : "Playa"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Look for a destination",
+      "time" : {
+        "start" : 1646393725273,
+        "stop" : 1646393728013,
+        "duration" : 2740
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "destination",
+        "value" : "Cancun"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Find Destination and Click",
+      "time" : {
+        "start" : 1646393728013,
+        "stop" : 1646393728553,
+        "duration" : 540
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "searchParameter",
+        "value" : "Cancun, Cancún"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click back arrow",
+      "time" : {
+        "start" : 1646393728554,
+        "stop" : 1646393729673,
+        "duration" : 1119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click back arrow",
+      "time" : {
+        "start" : 1646393729673,
+        "stop" : 1646393732329,
+        "duration" : 2656
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1646393732334,
+      "stop" : 1646393732602,
+      "duration" : 268
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "airbnb.TestSuit02Allure"
+  }, {
+    "name" : "testClass",
+    "value" : "airbnb.TestSuit02Allure"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC004_selectValueFromResultSearchBasedOnText"
+  }, {
+    "name" : "parentSuite",
+    "value" : "All Test Suite Allure"
+  }, {
+    "name" : "suite",
+    "value" : "D:/OneDrive/Proyectos/P_IntelliJ_IDEA/AirbnbMaven"
+  }, {
+    "name" : "subSuite",
+    "value" : "airbnb.TestSuit02Allure"
+  }, {
+    "name" : "host",
+    "value" : "CRISS-NOTE-WORK"
+  }, {
+    "name" : "thread",
+    "value" : "8720@CRISS-NOTE-WORK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Selection"
+  }, {
+    "name" : "epic",
+    "value" : "Regression Tests"
+  }, {
+    "name" : "feature",
+    "value" : "ExplorePage Tests"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "615f4788e99ac084.json",
+  "parameterValues" : [ ]
+}

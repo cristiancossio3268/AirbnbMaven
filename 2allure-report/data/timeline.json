@@ -1,0 +1,200 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "CRISS-NOTE-WORK",
+    "children" : [ {
+      "name" : "8720@CRISS-NOTE-WORK.main(1)",
+      "children" : [ {
+        "name" : "Scenario Look for destination whit Excel",
+        "uid" : "618d8c8622b45dc1",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393714077,
+          "stop" : 1646393719339,
+          "duration" : 5262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Go to Profile and validate Legal",
+        "uid" : "c2dfb0ca52cc8b0f",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393748354,
+          "stop" : 1646393758710,
+          "duration" : 10356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Find a Restaurant whit JSON",
+        "uid" : "bf14add0835921d5",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393719345,
+          "stop" : 1646393725213,
+          "duration" : 5868
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Verify Profile page",
+        "uid" : "6661fe2fd5ea3e8a",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393742727,
+          "stop" : 1646393744334,
+          "duration" : 1607
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Look for destination whit JSON",
+        "uid" : "bebf63d76a292bc1",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393706268,
+          "stop" : 1646393713796,
+          "duration" : 7528
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Select a value from result search based on a text",
+        "uid" : "615f4788e99ac084",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393725217,
+          "stop" : 1646393732330,
+          "duration" : 7113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Swipe to get bottom of the screen",
+        "uid" : "3714c59bf5f6439e",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393744337,
+          "stop" : 1646393748351,
+          "duration" : 4014
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Screenshot of Profile bottom page",
+        "uid" : "48ee01f1dc0085f7",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393768567,
+          "stop" : 1646393768893,
+          "duration" : 326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Scroll to partial text money",
+        "uid" : "51fa15c4408560cb",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393765735,
+          "stop" : 1646393768564,
+          "duration" : 2829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Scroll to exactly text Learn about hosting",
+        "uid" : "7521d93c1532acc2",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393758714,
+          "stop" : 1646393765733,
+          "duration" : 7019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Click on Profile",
+        "uid" : "292d1a366465e265",
+        "parentUid" : "5dd5e5daad496283031d1f1a922d6be7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393738615,
+          "stop" : 1646393742724,
+          "duration" : 4109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5dd5e5daad496283031d1f1a922d6be7"
+    } ],
+    "uid" : "3aa85d930957d6a3257c1c28d254512c"
+  } ],
+  "name" : "timeline"
+}

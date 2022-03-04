@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "FAILURE ON PURPOSE",
+      "children" : [ {
+        "name" : "Scenario Find a Restaurant whit JSON",
+        "uid" : "bf14add0835921d5",
+        "parentUid" : "35a2564adf3d6319854dd7f0a51c3036",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393719345,
+          "stop" : 1646393725213,
+          "duration" : 5868
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Scenario Scroll to partial text money",
+        "uid" : "51fa15c4408560cb",
+        "parentUid" : "35a2564adf3d6319854dd7f0a51c3036",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393765735,
+          "stop" : 1646393768564,
+          "duration" : 2829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35a2564adf3d6319854dd7f0a51c3036"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

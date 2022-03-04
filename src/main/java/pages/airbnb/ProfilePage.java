@@ -4,6 +4,7 @@ import core.BasePage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.qameta.allure.Step;
 
 
 public class ProfilePage extends BasePage {
@@ -34,8 +35,8 @@ public class ProfilePage extends BasePage {
      * @return True if Alert is present
      * @throws InterruptedException
      */
+    @Step("Verify Profile Title")
     public boolean verifyProfileText(){
-        reporter("Validating if Profile page is present...");
         System.out.println("Validating if Profile page is present...");
         return profileTitle.isDisplayed();
     }
@@ -46,9 +47,7 @@ public class ProfilePage extends BasePage {
      * @throws InterruptedException
      */
     public boolean verifyLegalText(){
-        reporter("Validating if Legal title is present...");
         System.out.println("Validating if Legal title is present...");
         return legalTextScroll.isDisplayed();
     }
-
 }

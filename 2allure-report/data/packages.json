@@ -1,0 +1,204 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "airbnb",
+    "children" : [ {
+      "name" : "TestSuit02Allure",
+      "children" : [ {
+        "name" : "TC001_lookForDestinationWhitJSON",
+        "uid" : "bebf63d76a292bc1",
+        "parentUid" : "d642033a7c5665c212caba6b99ce08e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393706268,
+          "stop" : 1646393713796,
+          "duration" : 7528
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC002_lookForDestinationWhitExcel",
+        "uid" : "618d8c8622b45dc1",
+        "parentUid" : "d642033a7c5665c212caba6b99ce08e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393714077,
+          "stop" : 1646393719339,
+          "duration" : 5262
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC003_findRestaurantWhitJSON",
+        "uid" : "bf14add0835921d5",
+        "parentUid" : "d642033a7c5665c212caba6b99ce08e2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393719345,
+          "stop" : 1646393725213,
+          "duration" : 5868
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC004_selectValueFromResultSearchBasedOnText",
+        "uid" : "615f4788e99ac084",
+        "parentUid" : "d642033a7c5665c212caba6b99ce08e2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393725217,
+          "stop" : 1646393732330,
+          "duration" : 7113
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d642033a7c5665c212caba6b99ce08e2"
+    }, {
+      "name" : "TestSuit03Allure",
+      "children" : [ {
+        "name" : "TC001_clickOnProfile",
+        "uid" : "292d1a366465e265",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393738615,
+          "stop" : 1646393742724,
+          "duration" : 4109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC002_verifyProfilePage",
+        "uid" : "6661fe2fd5ea3e8a",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393742727,
+          "stop" : 1646393744334,
+          "duration" : 1607
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC003_swipeToGetBottomOfTheScreen",
+        "uid" : "3714c59bf5f6439e",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393744337,
+          "stop" : 1646393748351,
+          "duration" : 4014
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC004_goToProfileAndValidateLegal",
+        "uid" : "c2dfb0ca52cc8b0f",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393748354,
+          "stop" : 1646393758710,
+          "duration" : 10356
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC005_scrollToExactlyText",
+        "uid" : "7521d93c1532acc2",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393758714,
+          "stop" : 1646393765733,
+          "duration" : 7019
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC006_scrollToPartialText",
+        "uid" : "51fa15c4408560cb",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "failed",
+        "time" : {
+          "start" : 1646393765735,
+          "stop" : 1646393768564,
+          "duration" : 2829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TC007_screenShotOfProfileBottomPage",
+        "uid" : "48ee01f1dc0085f7",
+        "parentUid" : "209374c8221536c34deaf42c72b05002",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646393768567,
+          "stop" : 1646393768893,
+          "duration" : 326
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "209374c8221536c34deaf42c72b05002"
+    } ],
+    "uid" : "e894ea244d11ace0927f2aff0a2e0623"
+  } ],
+  "name" : "packages"
+}

@@ -1,0 +1,8 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"Regression Tests","ProfilePage Tests","Verify","0","0","2","0","0"
+"Regression Tests","ProfilePage Tests","Screenshot","0","0","1","0","0"
+"Regression Tests","ExplorePage Tests","Selection","0","0","1","0","0"
+"Regression Tests","ProfilePage Tests","Swipe","0","0","1","0","0"
+"Regression Tests","ExplorePage Tests","Search","1","0","2","0","0"
+"Regression Tests","ProfilePage Tests","Scroll","1","0","1","0","0"
+"Regression Tests","ProfilePage Tests","Click","0","0","1","0","0"

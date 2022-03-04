@@ -4,6 +4,7 @@ import core.BasePage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 import java.util.List;
@@ -43,8 +44,8 @@ public class ExplorePage extends BasePage {
      * Check if Explore page is present
      * @return
      */
+    @Step("Check if Explore page is present")
     public boolean isExplorePagePresent(){
-        reporter("Trying to check if Explore page is present...");
         System.out.println("Trying to check if Explore page is present...");
         return notSureTx.isDisplayed();
     }
@@ -53,10 +54,8 @@ public class ExplorePage extends BasePage {
      * Click on Where are you going method
      */
     public void whereAreYouGoingClick () {
-        reporter("Trying to click on Where are you going method...");
         System.out.println("Trying to click on Where are you going method...");
         whereText.click();
-        reporter("Where are you going clicked!");
         System.out.println("Where are you going clicked!");
     }
 
@@ -65,10 +64,8 @@ public class ExplorePage extends BasePage {
      * @param destination
      */
     public void enterDestination (String destination) {
-        reporter("Trying to enter destination field...");
         System.out.println("Trying to enter destination field...");
         destinationTxBx.sendKeys(destination);
-        reporter("Destination entered");
         System.out.println("Destination entered");
     }
 
@@ -76,28 +73,23 @@ public class ExplorePage extends BasePage {
      * Se le entrega un parámetro de búsueda y guarda los datos encontrados en una lista y poder recorrer esa lista de datos y hacer click en el parámetro
      * @param searchParameter
      */
+    @Step("Find Destination and Click")
     public void findDestinationClick(String searchParameter){
-        reporter("Trying to click final destination...");
         System.out.println("Trying to click final destination...");
         waitForElementToBeClickable(By.id("com.airbnb.android:id/title"));
         List <AndroidElement> elementsSearch = driver.findElementsById("com.airbnb.android:id/title");
-        reporter("List size: "+elementsSearch.size());
         System.out.println("List size: "+elementsSearch.size());
         //For to see elements from List - imprime todos los elementos de la lista
-        reporter("Values found:");
         System.out.println("Values found:");
         for (AndroidElement element:elementsSearch) {
-            reporter(element.getText());
             System.out.println(element.getText());
         }
         for (int i= 0; i < elementsSearch.size(); i++){
             if (elementsSearch.get(i).getText().equalsIgnoreCase(searchParameter)){
-                reporter("Search parameter found");
                 System.out.println("Search parameter found");
                 elementsSearch.get(i).click();
                 break;
             }else
-                reporter("Current value is not matching: "+elementsSearch.get(i).getText());
                 System.out.println("Current value is not matching: "+elementsSearch.get(i).getText());
         }
     }
@@ -105,11 +97,10 @@ public class ExplorePage extends BasePage {
     /**
      * Back arrow click
      */
+    @Step("Click back arrow")
     public void clickBackArrow(){
-        reporter("Trying to click back arrow...");
         System.out.println("Trying to click back arrow...");
         backArrow.click();
-        reporter("Back arrow was clicked!");
         System.out.println("Back arrow was clicked!");
     }
 
@@ -117,6 +108,7 @@ public class ExplorePage extends BasePage {
      * Look for a destination method
      * @param destination
      */
+    @Step("Look for a destination")
     public void lookForDestination(String destination){
         whereAreYouGoingClick();
         enterDestination(destination);

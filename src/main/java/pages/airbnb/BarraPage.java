@@ -4,6 +4,7 @@ import core.BasePage;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.qameta.allure.Step;
 
 public class BarraPage extends BasePage {
 
@@ -36,6 +37,7 @@ public class BarraPage extends BasePage {
     }
 
     //Profile Icon
+    @Step("Click on Profile Icon")
     public void profileButtonClick () {
         System.out.println("Trying to click on Profile Icon...");
         profileButton.click();

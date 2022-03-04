@@ -8,6 +8,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import io.qameta.allure.Step;
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -20,15 +21,16 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 
 import javax.imageio.ImageIO;
 import java.io.*;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 public class BasePage {
 
@@ -96,6 +98,7 @@ public class BasePage {
      * Retreives value selected
      * @return value
      */
+    @Step("Read JSON file")
     public String getValueJSON(String path, String param){
         JSONParser parser = new JSONParser();
         String value ="";
@@ -151,6 +154,7 @@ public class BasePage {
      * @param value - Value to look for
      * @return value to use
      */
+    @Step("Read Excel file")
     public String getValueFromExcel(String filename, String value){
         try{
             //Getting excel file
@@ -234,6 +238,7 @@ public class BasePage {
      * @param name - Name of the file
      * @throws IOException - Exception
      */
+    @Step("Take screenshots")
     public void takeScreenShot(String path, String name) throws IOException {
         //Screenshots variables
         LocalDateTime date = LocalDateTime.now();
@@ -335,6 +340,7 @@ public class BasePage {
      * Method to swipes to an element
      * @param swipes - # of swipes
      */
+    @Step("Swipes to an element")
     public void swipeToElement(int swipes, Direction dir){
         for (int i = 0; i < swipes; i++){
             swipeScreen(dir);
@@ -348,6 +354,7 @@ public class BasePage {
      * Scroll to an element by exact text
      * @param exactText
      */
+    @Step("Scroll to exact text")
     public void scrollToText(String exactText){
         System.out.println("Trying to scroll to exact text...");
         try {
@@ -366,6 +373,7 @@ public class BasePage {
      * Scroll to an element by partial text
      * @param partialText
      */
+    @Step("Scroll to partial text")
     public void scrollToPartialText(String partialText){
         System.out.println("Trying to scroll to partial text...");
         try {
@@ -378,10 +386,31 @@ public class BasePage {
     }
 
     /**
-     * method for reporter
-     * @param log
+     * method for execute command in shell
+     * @param shellCmd
      */
-    public void reporter(String log) {
-        Reporter.log(log);
+    public static void executeShellCmd(String shellCmd) {
+        try {
+            Process process = Runtime.getRuntime().exec(shellCmd);
+            process.waitFor();
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error in Executing the command " + shellCmd);
+        }
+    }
+
+    /**
+     *
+     */
+    @Step("Generación de allure report")
+    public static void generateAllureReport() {
+        String pattern = "dd-MM-yyyy_HH:mm:ss";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+        String reportfolder = "allure-report_" + simpleDateFormat.format(new Date());
+        executeShellCmd("allure generate allure-results");
+        executeShellCmd("mv allure-report " + reportfolder);
+        executeShellCmd("cp -R src/main/resources/config/allure-2.9.0 " + reportfolder);
+        executeShellCmd("cp src/main/resources/config/open_report_mac.sh " + reportfolder);
+        executeShellCmd("cp src/main/resources/config/open_report_windows.bat " + reportfolder);
     }
 }
