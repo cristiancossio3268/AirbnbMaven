@@ -11,8 +11,11 @@ import pages.airbnb.BarraPage;
 import pages.airbnb.ProfilePage;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+import static core.utils.extentreports.ExtentTestManager.startTest;
 
 @Listeners(AllureListener.class)
 @Epic("Regression Tests")
@@ -33,7 +36,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Click on Profile")
     @Story("Click")
-    public void TC001_clickOnProfile(){
+    public void TC001_clickOnProfile(Method method){
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Class objects
         barraObj = new BarraPage(getDriver());
@@ -48,7 +54,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     @Description("Verify Profile page")
     @Story("Verify")
-    public void TC002_verifyProfilePage(){
+    public void TC002_verifyProfilePage(Method method){
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Class objects
         profileObj = new ProfilePage(getDriver());
@@ -64,7 +73,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     @Description("Swipe to get bottom of the screen")
     @Story("Swipe")
-    public void TC003_swipeToGetBottomOfTheScreen(){
+    public void TC003_swipeToGetBottomOfTheScreen(Method method){
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Class objects
         profileObj = new ProfilePage(getDriver());
@@ -82,10 +94,13 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.MINOR)
     @Description("Go to Profile and validate Legal")
     @Story("Verify")
-    public void TC004_goToProfileAndValidateLegal(){
+    public void TC004_goToProfileAndValidateLegal(Method method){
 
         //Class objects
         profileObj = new ProfilePage(getDriver());
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Verify Profile page
         profileObj.scrollToText("Account Settings");
@@ -100,7 +115,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.TRIVIAL)
     @Description("Scroll to exactly text Learn about hosting")
     @Story("Scroll")
-    public void TC005_scrollToExactlyText(){
+    public void TC005_scrollToExactlyText(Method method){
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Class objects
         profileObj = new ProfilePage(getDriver());
@@ -118,7 +136,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.TRIVIAL)
     @Description("Scroll to partial text money")
     @Story("Scroll")
-    public void TC006_scrollToPartialText(){
+    public void TC006_scrollToPartialText(Method method){
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         //Class objects
         profileObj = new ProfilePage(getDriver());
@@ -138,7 +159,10 @@ public class TestSuit03Allure extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     @Description("Screenshot of Profile bottom page")
     @Story("Screenshot")
-    public void TC007_screenShotOfProfileBottomPage() throws IOException {
+    public void TC007_screenShotOfProfileBottomPage(Method method) throws IOException {
+
+        //Method required for allure
+        startTest(method.getName(),"Look for destination whit JSON");
 
         pathSS = pathSS.replaceAll(":",".");
 

@@ -106,6 +106,6 @@ public class TestSuit02Allure extends BaseTest {
         exploreObj.lookForDestination(exploreObj.getValueJSON("src/main/resources/airbnb/destinations.json", "Playa"));
         exploreObj.findDestinationClick("Cancun, Cancún");
         exploreObj.clickBackArrow();
-        exploreObj.clickBackArrow();
+        //exploreObj.clickBackArrow();
     }
 }
